@@ -22,8 +22,15 @@ function createAnimal(animalType) {
     return {animalType: animalType, deadlyDevice: deadlyDevice}
   }
 
+  // -- old code, refactored above --
+  // return function diabolicalCreature(deadlyDevice) {
+  //   return {animalType: animalType, deadlyDevice: deadlyDevice}
+  // }
+
 }
 
 var sharkCreator = createAnimal('Shark')
+// when executing sharkCreator below, the function returns an anon function that accepts a parameter
+// one can now execute sharkCreator and pass the deadlyDevice
 var sharkWithFrickinLaserbeam = sharkCreator('Laserbeam')
 var sharkWithFrickinCannon = sharkCreator('Cannon')
