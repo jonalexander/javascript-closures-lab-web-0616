@@ -9,7 +9,7 @@ describe('Closures', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
   });
-  
+
   describe('Three point turn', function () {
     it('should have a `bumpCounter()` function', () => {
       expect(bumpCounter).toBeA('function');
